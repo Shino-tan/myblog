@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tanzheng.myblog.mapper.SysUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.tanzheng.myblog.entity.SysUser">
+        <id column="id" property="id" />
+        <result column="account" property="account" />
+        <result column="admin" property="admin" />
+        <result column="avatar" property="avatar" />
+        <result column="create_date" property="createDate" />
+        <result column="deleted" property="deleted" />
+        <result column="email" property="email" />
+        <result column="last_login" property="lastLogin" />
+        <result column="mobile_phone_number" property="mobilePhoneNumber" />
+        <result column="nickname" property="nickname" />
+        <result column="password" property="password" />
+        <result column="salt" property="salt" />
+        <result column="status" property="status" />
+    </resultMap>
+
+</mapper>
