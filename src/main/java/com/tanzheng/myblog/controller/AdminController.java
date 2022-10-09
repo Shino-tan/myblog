@@ -1,9 +1,12 @@
 package com.tanzheng.myblog.controller;
 
 
+import com.tanzheng.myblog.service.IAdminService;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.stereotype.Controller;
+
+import javax.annotation.Resource;
 
 /**
  * <p>
@@ -16,5 +19,8 @@ import org.springframework.stereotype.Controller;
 @Controller
 @RequestMapping("/admin")
 public class AdminController {
+
+    @Resource
+    IAdminService adminService;
 
 }
